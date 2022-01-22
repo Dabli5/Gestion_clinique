@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ConnexionController">
+   <children>
+      <Circle fill="#d7dadc" layoutX="143.0" layoutY="258.0" radius="51.0" stroke="#fcfbfb" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#102e6b" height="524.0" stroke="#16459c" strokeType="INSIDE" width="816.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="265.0" layoutX="205.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="430.0" />
+      <TextField fx:id="txtfLogin" layoutX="234.0" layoutY="281.0" opacity="0.64" prefHeight="27.0" prefWidth="370.0" promptText="Entrer votre Login" />
+      <CheckBox fx:id="checkbox" layoutX="235.0" layoutY="396.0" mnemonicParsing="false" text="Je suis pas un Robot" />
+      <Button layoutX="449.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleConnexion" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #54B0D2;" text="CONNEXION" />
+      <Text fx:id="txtfError" fill="#dc0808" layoutX="299.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="login ou le mot de passe Incorrect">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="235.0" layoutY="436.0" mnemonicParsing="false" onAction="#handleAnnuler" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #e46617;" text="ANNULER" textFill="WHITE" />
+      <Button fx:id="ButtonIns" layoutX="694.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleCreerCompte" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #101010;" text="S'inscrire" textFill="#f4f1f1" />
+      <PasswordField fx:id="txtfPassword" layoutX="235.0" layoutY="341.0" prefHeight="26.0" prefWidth="370.0" promptText="Entrer votre password" />
+      <FontAwesomeIcon fill="#b92121" glyphName="HEART" layoutX="20.0" layoutY="43.0" size="3em" wrappingWidth="27.69999408721924" />
+      <Text fill="#efefef" layoutX="69.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clinique-221" />
+      <FontAwesomeIcon fill="#2a7bcc" glyphName="USER" layoutX="380.0" layoutY="176.0" size="7em" wrappingWidth="56.40707778930664" />
+      <FontAwesomeIcon fx:id="cachePassword" glyphName="EYE_SLASH" layoutX="578.0" layoutY="359.0" onDragDetected="#handleCachePassword" />
+   </children>
+</AnchorPane>

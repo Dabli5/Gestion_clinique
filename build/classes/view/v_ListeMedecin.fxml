@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ListeMedecinController">
+   <children>
+      <AnchorPane layoutX="135.0" layoutY="74.0" prefHeight="576.0" prefWidth="910.0" style="-fx-background-color: #102e6b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="tblvListeMedecin" layoutX="118.0" layoutY="169.0" prefHeight="350.0" prefWidth="679.0">
+              <columns>
+                <TableColumn fx:id="tblcIdMed" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="tblcNomMed" prefWidth="138.3999481201172" text="NOM" />
+                  <TableColumn fx:id="tblcPreMed" prefWidth="208.800048828125" text="PRENOM" />
+                  <TableColumn fx:id="tblcStatutMed" minWidth="5.60003662109375" prefWidth="255.19989013671875" text="STATUT" />
+              </columns>
+            </TableView>
+            <Button fx:id="affecterMed" layoutX="403.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleAffecterMed" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #28abbc;" text="AFFECTER" textFill="WHITE" />
+            <Button fx:id="idretourMed" layoutX="35.0" layoutY="69.0" mnemonicParsing="false" onAction="#handleRetourMedp" text="Retour" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

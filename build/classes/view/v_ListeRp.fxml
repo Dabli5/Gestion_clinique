@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="854.0" style="-fx-background-color: #102e6b;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ListeRpController">
+   <children>
+      <TableView fx:id="tblvListeRP" layoutX="70.0" layoutY="110.0" prefHeight="358.0" prefWidth="714.0">
+        <columns>
+          <TableColumn fx:id="tblcIdRp" prefWidth="107.0" text="ID" />
+          <TableColumn fx:id="tblcNomRp" prefWidth="217.0" text="NOM" />
+            <TableColumn fx:id="tblcPrenomRp" prefWidth="264.0" text="PRENOM" />
+            <TableColumn fx:id="tblcLoginRp" prefWidth="124.0" text="LOGIN" />
+        </columns>
+      </TableView>
+      <Button fx:id="idBouttonAffecetrMed" layoutX="357.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleAffecterMed" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #27abb8;" text="AFFECTER" textFill="WHITE" />
+      <Button fx:id="idBouttonRetourRp" layoutX="70.0" layoutY="46.0" mnemonicParsing="false" onAction="#handleButtonRetourRp" text="Retour" />
+   </children>
+</AnchorPane>

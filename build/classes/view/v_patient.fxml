@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="IdBoutton" prefHeight="496.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PatientController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="64.0" layoutY="-1.0" stroke="DODGERBLUE" strokeType="INSIDE" width="764.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="439.0" layoutY="62.0" stroke="DODGERBLUE" strokeType="INSIDE" width="152.0" />
+      <Button layoutX="195.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleDoReservation" prefHeight="51.0" prefWidth="458.0" text="DEMANDER UN RENDEZ-VOUS" />
+      <Button layoutX="195.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleListerConsultations" prefHeight="51.0" prefWidth="458.0" text="LISTER MES CONSULTATIONS" />
+      <Button layoutX="195.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleListerRendezVous" prefHeight="51.0" prefWidth="458.0" text="LISTER MES RENDEZ-VOUS" />
+      <Button layoutX="195.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleListerPrestations" prefHeight="51.0" prefWidth="458.0" text="LISTER MES PRESTATIONS" />
+      <Label layoutX="318.0" layoutY="89.0" prefHeight="28.0" prefWidth="211.0" text="MES FONCTIONNALITES">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutY="324.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #7d1a99;" text="Deconnexion" textFill="#f5edf7" />
+      <FontAwesomeIcon fill="#faf8f8" glyphName="SIGN_OUT" layoutX="6.0" layoutY="349.0" size="2em" />
+      <Button layoutY="286.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="152.0" style="-fx-background-color: #7d1a99;" text="Acceuil" textFill="#f5edf7" />
+      <FontAwesomeIcon glyphName="HOME" layoutX="4.0" layoutY="310.0" size="2em" />
+   </children>
+</AnchorPane>

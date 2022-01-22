@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="1045.0" style="-fx-background-color: #102e6b;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ListerRvController">
+   <children>
+      <TableView fx:id="tblvListerRv" layoutX="489.0" layoutY="214.0" prefHeight="411.0" prefWidth="542.0" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="489.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="214.0">
+        <columns>
+          <TableColumn fx:id="tblcId" prefWidth="101.0" text="ID" />
+          <TableColumn fx:id="tblcDate" prefWidth="184.0" text="Date" />
+            <TableColumn fx:id="tblcTypreRv" prefWidth="256.0" text="Type de Rendez-vous" />
+        </columns>
+      </TableView>
+      <Label fx:id="txtfTitre" layoutX="665.0" layoutY="175.0" text="Liste des demande de Rendez-Vous" textFill="#fffefe" />
+      <TableView fx:id="tblvRvConsPresta" layoutX="32.0" layoutY="442.0" prefHeight="183.0" prefWidth="435.0">
+        <columns>
+          <TableColumn fx:id="tblcIdRvConsP" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tblcDateRvConsP" prefWidth="110.0" text="Date" />
+            <TableColumn fx:id="tblcTypeRvConsP" prefWidth="132.0" text="Type de Rendez-Vous" />
+            <TableColumn fx:id="tblcNomMedecin" prefWidth="117.0" text="Medecin" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="idcbo" layoutX="657.0" layoutY="123.0" onAction="#cboType" prefHeight="37.0" prefWidth="206.0" promptText="FIltrer Par Type" />
+      <Button fx:id="idBouttonDRv" layoutX="660.0" layoutY="635.0" mnemonicParsing="false" onAction="#handleDRv" prefHeight="37.0" prefWidth="200.0" style="-fx-background-color: #359acd;" text="Demandez un Rendez-Vous" textFill="WHITE" />
+      <Label fx:id="txtfTitre1" layoutX="193.0" layoutY="420.0" text="Liste de mes Consultations" textFill="WHITE" />
+      <Button layoutX="199.0" layoutY="635.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="100.0" style="-fx-background-color: #e88814;" text="Annuler" textFill="WHITE" />
+      <Button layoutX="919.0" layoutY="22.0" mnemonicParsing="false" onAction="#hdlD" prefHeight="37.0" prefWidth="112.0" text="DECONNEXION" />
+      <TableView fx:id="tblvRvConsPresta1" layoutX="33.0" layoutY="228.0" prefHeight="183.0" prefWidth="435.0">
+         <columns>
+            <TableColumn fx:id="tblcIdRvConsP1" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="tblcDateRvConsP1" prefWidth="110.0" text="Date" />
+            <TableColumn fx:id="tblcTypeRvConsP1" prefWidth="132.0" text="Type de Rendez-Vous" />
+            <TableColumn fx:id="tblcNomMedecin1" prefWidth="117.0" text="Responsable de Prestation" />
+         </columns>
+      </TableView>
+      <Label fx:id="txtfTitre11" layoutX="199.0" layoutY="206.0" text="Liste de mes Prestations" textFill="WHITE" />
+      <Label fx:id="txtfTitre" alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="91.0" text="Nom" textFill="#f8f4f4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="#c64153" glyphName="USER" layoutX="54.0" layoutY="134.0" size="10em" />
+      <Label layoutX="171.0" layoutY="46.0" text="PATIENT" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
